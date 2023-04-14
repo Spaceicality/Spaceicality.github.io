@@ -1,6 +1,0 @@
-<h2 id="titleText">About Me</h2>
-    <h3 id="descriptionText">I am a 16 year old programmer that somewhat knows how to program.</h3>
-    <h2 id="titleText">Things I've worked on</h2>
-    <h3 id="descriptionText">I've worked on the website for the place I work at.</h3>
-
-<a class="twitter-timeline" href="https://twitter.com/NomnomPlays?ref_src=twsrc%5Etfw">Tweets by NomnomPlays</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
