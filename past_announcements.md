@@ -5,3 +5,4 @@
 |         Dates         |     Announcement     |
 |-----------------------|----------------------|
 |04/04/2023 - 04/10/2023|I am 17 years old now!|
+|04/15/2023 - 12/31/2023|Replit Exclusive<br>GitHub version is up! find it at https://nomnomplays.github.io/|
