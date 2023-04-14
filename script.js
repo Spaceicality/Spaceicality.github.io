@@ -23,7 +23,7 @@ if (currentMonth < birthMonth || (currentMonth == birthMonth && currentDay < bir
   
 function printResults(){
   var message = "I am a "+age+" year old programmer that somewhat knows how to program.<br>I can use some basic Java and Python but not Javascript.";
-  if (window.location.pathname == '/' || window.location.pathname == '/index.html') {
+  if (window.location.pathname == '/' || window.location.pathname == 'index.html') {
     document.getElementById('age').innerHTML = message;
   }
 }
