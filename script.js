@@ -23,7 +23,7 @@ if (currentMonth < birthMonth || (currentMonth == birthMonth && currentDay < bir
   
 function printResults(){
   var message = "I am a "+age+" year old programmer that somewhat knows how to program.<br>I can use some basic Java and Python but not Javascript.";
-  if (window.location.pathname == '/portfolio/' || window.location.pathname == '/portfolio/index.html') {
+  if (window.location.pathname == '/' || window.location.pathname == '/index.html') {
     document.getElementById('age').innerHTML = message;
   }
 }
@@ -71,7 +71,7 @@ function showDiscordPopup() {
   discordPopup.classList.toggle("show");
 }
 
-if (window.location.pathname == '/portfolio/settings.html') {
+if (window.location.pathname == '/settings.html') {
   var lightBtn = document.getElementById('light');
   var darkBtn = document.getElementById('dark');
   var oledBtn = document.getElementById('oled');
@@ -108,7 +108,7 @@ if (window.location.pathname == '/portfolio/settings.html') {
 var theme = window.localStorage.getItem('mode');
 
 if (theme == 'dark') {
-  if (window.location.pathname == '/portfolio/settings.html') {
+  if (window.location.pathname == '/settings.html') {
     darkBtn.checked = true;
   }
   document.documentElement.classList.remove("light");
@@ -117,7 +117,7 @@ if (theme == 'dark') {
 }
 
 if (theme == 'light') {
-  if (window.location.pathname == '/portfolio/settings.html') {
+  if (window.location.pathname == '/settings.html') {
     lightBtn.checked = true;
   }
   document.documentElement.classList.remove("dark");
@@ -126,7 +126,7 @@ if (theme == 'light') {
 }
 
 if (theme == 'oled') {
-  if (window.location.pathname == '/portfolio/settings.html') {
+  if (window.location.pathname == '/settings.html') {
     oledBtn.checked = true;
   }
   document.documentElement.classList.remove("dark");
