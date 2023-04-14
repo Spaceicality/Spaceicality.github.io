@@ -1,0 +1,270 @@
+html, body {
+  height: auto;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background: var(--color-bg);
+	color: var(--color-fg);
+  min-height: 100vh;
+  display:flex;
+  flex-direction:column;
+}
+
+:root,
+:root.light {
+	--color-bg: #fff;
+	--color-fg: #000;
+  --color-bg-light: rgba(0, 0, 0, 0.15);
+  --color-fg-light: rgba(0, 0, 0, 0.5);
+}
+:root.dark {
+	--color-bg: #2f2f2f;
+	--color-fg: #fff;
+  --color-bg-light: rgba(255, 255, 255, 0.15);
+  --color-fg-light: rgba(255, 255, 255, 0.5);
+}
+:root.oled {
+	--color-bg: #000;
+	--color-fg: #fff;
+  --color-bg-light: rgba(255, 255, 255, 0.15);
+  --color-fg-light: rgba(255, 255, 255, 0.5);
+}
+
+.header h1 {
+  transform: translateY(-50%);
+}
+
+.header .navigation-links {
+  position: absolute;
+  text-align: center;
+  height: 50%;
+  width: 100%;
+  bottom: 0;
+/*   border: 2px solid red;
+  border-bottom: none; */
+}
+
+.header .navigation-links a {
+  display: inline-block;
+  text-decoration: none;
+  line-height: 45px;
+  transform: translateY(-2px);
+  border-radius: 10px 10px 0 0;
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  border-bottom: none;
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  height: 100%;
+  width: auto;
+  z-index: 2;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.header .navigation-links a:hover {
+  border: 2px solid rgb(255, 255, 255);
+  border-bottom: none;
+}
+
+#banner {
+  display: block;
+  background-color: orange;
+  color: white;
+  transform: translateY(91px);
+  text-align: center;
+  font-size: 18px;
+  width: 100%;
+}
+
+
+#themes input, label {
+  float: left;
+}
+
+#themes label + input {
+  clear: both;
+}
+
+.main-content .description-text a {
+  color: var(--color-fg);
+}
+
+.header h1, a {
+  color: white;
+  text-align: center;
+/*   border: 5px solid red; */
+}
+
+/* #dropdown-button {
+  position: absolute;
+  transform: rotate(-90deg);
+  width: 50px;
+  height: 35px;
+  top: 0;
+  background: none;
+  border: none;
+  transition: transform .5s;
+}
+
+#dropdown-button span {
+  position: absolute;
+  left: 0;
+  top: 35px;
+  width: 100px;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  display: none;
+}
+
+#dropdown-button:hover > #dropdown-button span {
+  transition: transform .5s;
+  transform: rotate(0);
+  display: block;
+}
+
+#dropdown-button span a {
+  font-size: 20px;
+  color: black;
+} */
+
+.main-content {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 75px;
+  position: relative;
+/*   position: absolute; */
+  flex: 1 0 auto;
+  padding-bottom: 1em;
+  box-sizing: border-box;
+/*   border: 5px solid red; */
+}
+
+.main-content .title-text {
+  width: 50%;
+  border-bottom: 2px solid var(--color-fg);
+}
+
+.main-content .description-text {
+  margin-top: -15px;
+  color: var(--color-fg);
+}
+
+#nav-style {
+  display: inline-block;
+  text-decoration: none;
+/*   line-height: 45px; */
+/*   transform: translateY(-100%); */
+  border-radius: 10px;
+  border: 2px solid var(--color-fg-light);
+  background: var(--color-bg-light);
+/*   background: var(--color-fg); */
+  color: var(--color-fg);
+/*   height: 25%; */
+  width: auto;
+  z-index: 2;
+/*   font-size: 15px; */
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#nav-style:hover {
+  border: 2px solid var(--color-fg);
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-image: url('nav-bg.svg');
+  background-size: cover;
+  background-position: center;
+  border-bottom: 5px solid black;
+  z-index: 1;
+/*   border: 5px solid red; */
+}
+
+.footer {
+  background-color: #3c3c3c;
+  height: 100px;
+/*   position: static; */
+/*   transform: translateY(100%); */
+/*   display: block; */
+  position: relative;
+  text-align: center;
+  color: white;
+  bottom: 0;
+/*   flex-shrink: 0; */
+}
+
+.footer a {
+  padding: 0 10px;
+  border-left: 2.5px solid white;
+}
+
+.footer div {
+  padding: 0 10px;
+  border-left: 2.5px solid white;
+  border-right: 2.5px solid white;
+}
+
+/* Popup container - can be anything you want */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-decoration: underline;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity:1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1;}
+}
