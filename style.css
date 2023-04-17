@@ -71,11 +71,14 @@ html, body {
 #banner {
   display: block;
   background-color: orange;
+/*   position: fixed; */
   color: white;
   transform: translateY(91px);
   text-align: center;
   font-size: 18px;
   width: 100%;
+/*   border: 2px solid red; */
+  z-index: 1;
 }
 
 
@@ -141,6 +144,7 @@ html, body {
   padding-bottom: 1em;
   box-sizing: border-box;
 /*   border: 5px solid red; */
+/*   z-index: 1; */
 }
 
 .main-content .title-text {
@@ -183,7 +187,7 @@ html, body {
   background-size: cover;
   background-position: center;
   border-bottom: 5px solid black;
-  z-index: 1;
+  z-index: 2;
 /*   border: 5px solid red; */
 }
 
