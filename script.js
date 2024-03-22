@@ -30,7 +30,7 @@ function printResults(){
 
 printResults();
 
-var announcement = "I am 17 years old now!";
+var announcement = "I am officially legal. 18 y/o! I've also been thinking of remaking this website.";
 // Get the body element
 var body = document.getElementsByTagName("body")[0];
 
@@ -42,8 +42,8 @@ topbar.textContent = "Announcement: " + announcement;
 // Add the topbar element to the body
 body.insertBefore(topbar, body.firstChild);
 
-var startDateTime = new Date("2023-04-04T00:00:00");
-var endDateTime = new Date("2023-04-10T23:59:59");
+var startDateTime = new Date("2024-04-03T00:00:00");
+var endDateTime = new Date("2024-04-10T23:59:59");
 
 endDateTime = endDateTime.getTime();
 startDateTime = startDateTime.getTime();
